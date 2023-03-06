@@ -560,7 +560,7 @@
     url: '/guides/quicksilver/'
   cta_alt:
     title: 'Automate and Integrate with Quicksilver'
-    type: 'Essential Developer Training'
+    type: ''
     subtitle: "An introduction to Quicksilver: Pantheon's tool for integrating and automating with anything."
     url: '/workshops?c=lw3'
   topics-groups:
