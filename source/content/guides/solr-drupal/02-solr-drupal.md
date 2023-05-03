@@ -156,7 +156,7 @@ To install the Search API Pantheon module, switch to your local machine.
 1. Add the Search API Pantheon module as a required dependency:
 
    ```shell{promptUser:user}
-   composer require drupal/search_api_pantheon:^8 --prefer-dist
+   composer require drupal/search_api_pantheon:^8.1 --prefer-dist
    ```
 1. You should now have the Search API Pantheon module installed along with its dependencies. You can run `git status` to verify that only `composer.json` and `composer.lock` were modified.
 1. Commit and push the changes, Integrated Composer will take a few moments to install these on your site.
