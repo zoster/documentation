@@ -3,11 +3,11 @@ title: "Plans"
 subtitle: Site Hosting Plans and Addons
 description: Learn how to purchase and manage site plans and addons.
 tags: [plans]
-contributors: [wordsmither]
+contributors: [wordsmither, michellecolon-pantheon]
 showtoc: true
 permalink: docs/guides/account-mgmt/plans/site-plans
 editpath: docs/guides/account-mgmt/plans/07-site-plans.md
-reviewed: "2022-09-19"
+reviewed: "2023-04-11"
 contenttype: [guide]
 innav: [false]
 categories: [plans]

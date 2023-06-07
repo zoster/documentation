@@ -3,10 +3,10 @@ title: "Plans"
 subtitle: Plan Resources
 description: Learn about the resources provided with each of Pantheon's site plans.
 tags: [plans]
-contributors: [wordsmither]
+contributors: [wordsmither, michellecolon-pantheon]
 permalink: docs/guides/account-mgmt/plans/resources
 editpath: docs/guides/account-mgmt/plans/03-resources.md
-reviewed: "2022-09-19"
+reviewed: "2023-04-11"
 contenttype: [guide]
 innav: [false]
 categories: [plans]
