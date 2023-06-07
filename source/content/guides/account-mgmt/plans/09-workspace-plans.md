@@ -3,11 +3,11 @@ title: "Plans"
 subtitle: Account Tiers
 description: Manage your Account Tier.
 tags: [plans]
-contributors: [wordsmither]
+contributors: [wordsmither, michellecolon-pantheon]
 showtoc: true
 permalink: docs/guides/account-mgmt/plans/workspace-plans
 editpath: docs/guides/account-mgmt/plans/09-workspace-plans.md
-reviewed: "2022-09-19"
+reviewed: "2023-04-11"
 contenttype: [guide]
 innav: [false]
 categories: [plans]
