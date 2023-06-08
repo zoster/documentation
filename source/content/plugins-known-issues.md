@@ -1040,7 +1040,7 @@ export ENV=dev
 1. Create the following symlinks:
 
   ```bash{promptUser: user}
-  ln -s ../../files/private/wflogs ./wp-content/wflogs
+  ln -s ../files/private/wflogs ./wp-content/wflogs
   ln -s ../files/private/wordfence-waf.php ./wordfence-waf.php
   ln -s ../files/private/.user.ini ./.user.ini
   ```
