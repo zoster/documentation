@@ -85,7 +85,7 @@ commands:
       - run:
           name: Authenticate Terminus
           command: |
-            terminus auth:login || terminus auth:login --machine-token="${TERMINUS_TOKEN}"
+            terminus auth:login --machine-token="${TERMINUS_TOKEN}"
       - run:
           name: Validate Terminus
           command: terminus auth:whoami

@@ -62,7 +62,7 @@ pipelines:
           - chmod +x terminus
           - sudo ln -s ~/terminus/terminus /usr/local/bin/terminus
           - export TERMINUS_TOKEN=$TERMINUS_TOKEN
-          - terminus auth:login || terminus auth:login --machine-token="${TERMINUS_TOKEN}"
+          - terminus auth:login --machine-token="${TERMINUS_TOKEN}"
           - terminus auth:whoami
         caches:
           - terminus
