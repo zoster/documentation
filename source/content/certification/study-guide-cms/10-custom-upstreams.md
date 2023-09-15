@@ -72,12 +72,23 @@ As you can see in the diagram above, updates flow down from the top level reposi
 
 This inheritance workflow allows teams to scale the maintenance of all sites in the portfolio without having to also scale up the number of people on the team.
 
-## Custom Upstreams vs. Drupal Multisite
+## Custom Upstreams vs. Multisite Approaches
 
 There are many approaches to managing portfolios of Drupal and WordPress sites. In this section, we will talk about the advantages and disadvantages of Custom Upstreams versus the other approaches.
 
-**Drupal Multisites** use a shared codebase and per-site database instances to store content and configurations for each site. The challenges with Drupal Multisite are that it creates a single point of failure where a single bad code push can bring down the entire portfolio of sites at once. Additionally, as the number of sites in a portfolio expands over time, configurations stored in the database risk becoming out of sync with the codebase and themes. For more information on the disadvantages of a Drupal Multisite vs. a Custom Upstreams approach, see [this blog post](https://pantheon.io/blog/drupal-multisite-much-ado-about-drupal-multisite).
+### Drupal Multisite
 
+Drupal's multisite configuration is extremely rudimentary. By loading differetn databse credentials based on the hostname of an incoming request, it allows the use of a single shared codebase and per-site database instances to store content and configurations for each site. The challenges with Drupal Multisite are that it creates a single point of failure where a single bad code push can bring down the entire portfolio of sites at once. Additionally, as the number of sites in a portfolio expands over time, configurations stored in the database risk becoming out of sync with the codebase and themes. Because of this, we do not recommend Drupal multisite under any circumstance. For more information on the disadvantages of a Drupal Multisite vs. a Custom Upstreams approach, see [this blog post](https://pantheon.io/blog/drupal-multisite-much-ado-about-drupal-multisite).
+
+### WordPress Multisite Networks
+
+WordPress has invested significantly in it's Multisite Network feature, and it includes a rich set of APIs and administrative options. It also manages updates across many sites signficantly more effectively than Drupal's multisite configuration. There are still issues with running a single codebase leading to high-risk deployments, but this can be offset by the capabilities unlocked by implementing a WordPress Multisite Network. The key questions to ask when considering a Multisite Network are: 
+
+1. Will all the sites behave precisely the same; e.g. is the only difference between them is their content?
+2. Is there upside to having a shared CMS admin across all the sites?
+3. Do you plan to share resources and content between sites?
+
+The answer to the first question must be yes, or else it's not architecturally responsible to proceed. The second two questions will help you identify if there's business value (or risk) in the Site Network approach.
 
 ## Setting Up a WordPress Custom Upstream
 
