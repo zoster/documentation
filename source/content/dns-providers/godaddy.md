@@ -28,7 +28,16 @@ Identify DNS values to point your domain to Pantheon:
 
 Keep this page open and login to your [GoDaddy account](https://godaddy.com/) in a new tab before you continue.
 
-## Configure DNS Records on GoDaddy
+## Verify Domain Ownership
+
+![Example Verify Domain](../../images/godaddy-verify-domain.png)
+
+1. Click your GoDaddy profile in the top right menu bar and select **Manage My Domains**.
+2. Click the down arrow to the right of the domain you want to point to Pantheon, then click **Manage DNS**.
+3. Click the **Add** button and select **TXT** from the type dropdown menu.
+4. Paste the Name / Host value from Pantheon into the Name field, _excluding the domain name_
+5. Paste the Pantheon Value into the GoDaddy value and hit save. 
+
 
 ### A Record
 
